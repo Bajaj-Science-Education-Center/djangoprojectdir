@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Bajaj Science Centre | {% block pageName %}Format{% endblock %}</title>
+    {% load static %}
+
+    <link href="{% static 'CSS/main31.css' %}" rel = "stylesheet" type = "text/css">
+
+    {% block JSFiles %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <!--<script src="{% static 'JS/s.js' %}"></script>
+    <script src="{% static 'JS/p.js' %}"></script>
+    <script src="{% static 'JS/pb3.js' %}"></script>-->
+    <script src="{% static 'JS/particles.js' %}"></script>
+    <script src="{% static 'JS/par2.js' %}"></script>
+    <script src="{% static 'JS/scrollCaptions.js' %}"></script>
+
+    <script src="https://kit.fontawesome.com/c4fa8e95b3.js" crossorigin="anonymous"></script>
+    {% endblock %}
+
+    {%block extraJSFiles %}
+
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block menubar %}
+
+      <div class="header" id="header">
+        <div id="Particles" style="width: 100%; height: 260px;position: absolute; top: 0px; left: 0px; z-index: 0;"></div>
+        <script>
+          particlesJS('Particles', 'particle.json');
+        </script>
+        <!--<table class="nameAndLogo">
+          <tr>
+            <th><i class="fas fa-atom"></i> <i class="fas fa-flask"></i> <i class="fas fa-dna"></i> <i class="fas fa-infinity"></i> <i class="fas fa-meteor"></i></th>
+          </tr>
+          <tr>
+            <th>Bajaj Science Centre</th>
+          </tr>
+            <tr>
+            <td>"A place to think and a place to do"</td>
+          </tr>
+        </table>-->
+
+        <table class="nameAndLogo">
+          <tr>
+            <td>Gandhi Gyaan Mandir's</td>
+            <th class="logo" rowspan="4" width="200px"><img src="{% static 'Images/Logo.jpg' %}" class="logo" width="160px" height="160px" style="vertical-align:middle;"></th>
+          </tr>
+          <tr>
+            <th>Bajaj Science Centre</th>
+            <td></td>
+          </tr>
+          <tr>
+            <td>"A place to think and a place to do"</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td style="font-size: 15px;">Estd. 2007</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="menubar">
+        <div class="top">
+          <table class="mainMenu">
+            <tr>
+              <td onclick="location.href='/Home'">Home</td>
+              <td onclick="location.href='/AboutUs'">About Us</td>
+              <td onclick="location.href='/Programs'">Batches</td>
+              <td onclick="location.href='/Laboratories'">Laboratories</td>
+              <td onclick="location.href='/StudentSection'">Student Section</td>
+              <td onclick="location.href='/NoticeBoard'">Notice Board</td>
+              <td onclick="location.href='/SocialMedia'">Social Media</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="bottom">
+          <table class="subMenu">
+            {% block submenu %}
+            <tr>
+              <td>Home</td>
+              <td>About Us</td>
+              <td>Notice Board</td>
+              <td>Contact Us</td>
+            </tr>
+            {% endblock %}
+          </table>
+        </div>
+
+      </div>
+    {% endblock %}
+
+      {% block title %}
+      <div class="title">
+        <!--<img src="{% static 'Images/Laboratory Picture.jpg' %}">-->
+        <div class="titleIMG">
+          <img class="titleImage" src={% block imageSRC %}"{% static 'Images/auditorium1.jpg' %}"{% endblock %}>
+          <h1 class="titleText">{% block titleText %}Format{% endblock %}</h1>
+        </div>
+
+      </div>
+      {% endblock %}
+
+    {% block body %}
+    {% endblock %}
+
+    {% block loginData %}
+      {% if user.is_superuser %}
+
+      <div class="notice">
+        <h1 class='link' onclick="location.href='/manageWebsite'">Welcome {{user.first_name}}, Click here to manage website</h1>
+        <h1 class='link subsidiary' onclick="location.href='/logout'">Not {{user.first_name}}? Click here to logout</h1>
+      </div>
+
+      {% elif user.is_authenticated %}
+
+        <div class="notice">
+          <h1 class='link' onclick="location.href='/StudentSection/simulations'">Welcome {{user.first_name}}. Click here to go to Simulations</h1>
+          <h1 class='link subsidiary' onclick="location.href='/logout'">Not {{user.first_name}}? Click here to logout</h1>
+        </div>
+
+      {% else %}
+
+        <div class="notice">
+          <h1 class='link' onclick="location.href='/login'">To access full functionality of the website, click here to sign in</h1>
+        </div>
+
+      {% endif %}
+    {% endblock %}
+
+    {% block footer %}
+    <div class="footer">
+      <table class="footer">
+        <tr>
+          <td class="a" rowspan="2"><i class="fas fa-phone"></i></td>
+          <td class="b">07152-247024</td>
+          <td class="a" rowspan="2"><i class="fas fa-map-marker-alt"></i></td>
+          <td class="b" rowspan="2">Gandhi Gyan Mandir’s, Bajaj Science Centre Civil line Wardha. Pin: 442001</td>
+
+          <td class="a" rowspan="2"><i class="fas fa-envelope"></i></td>
+          <td class="b" rowspan="2">bajajscience.wda@gmail.com</td>
+          <td class="a" rowspan="2"><i class="fas fa-clock"></i></td>
+          <td class="b" rowspan="2">10:00 am to 6:00 pm</td>
+        </tr>
+
+        <tr>
+          <td class="b">+91 95791-94076</td>
+        </tr>
+      </table>
+    </div>
+    {% endblock %}
+  </body>
+
+</html>

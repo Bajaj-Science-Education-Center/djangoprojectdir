@@ -1,0 +1,36 @@
+{% extends "simTemplate.html" %}
+{% load static %}
+
+{% block simHead %} | Bouncing Balls{% endblock %}
+
+{% block JSSim %}
+
+  <script src="{% static 'JS/BouncingBalls/BouncingBalls4.js' %}"></script>
+  <script src="{% static 'JS/BouncingBalls/Ball3.js' %}"></script>
+  <script src="{% static 'JS/BouncingBalls/BallData1.js' %}"></script>
+
+{% endblock %}
+
+{% block extraTabs %}
+  <th onclick="location.href='/StudentSection/simulations'" class="outline">All Simulations</th>
+{% endblock %}
+
+{% block title %}Bouncing Balls Simulation{% endblock %}
+
+{% block Properties %}
+
+<tr>
+  <td colspan="2">Acceleration due to Gravity</td>
+  <td colspan="2"><input type="range" min="0" max="10" value="1" id="gSlider" class="DataSlider"></td>
+  <td colspan="2" id="g">1</td>
+</tr>
+
+<!--<div id="BallData">
+
+</div>-->
+
+{% endblock %}
+
+{% block additionalData %}
+<h1 class="Sim t" style="margin-top: 20px; margin-bottom: 20px;">To add a Planet, click on the simulation window</h1>
+{% endblock %}

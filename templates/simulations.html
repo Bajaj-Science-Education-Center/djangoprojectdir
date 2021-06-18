@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bajaj Science Centre | Student Section | Simulations{% block simHead %}{% endblock %}</title>
+    {% load static %}
+
+    <link href="{% static 'CSS/main31.css' %}" rel = "stylesheet" type = "text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+
+    <script src="https://kit.fontawesome.com/c4fa8e95b3.js" crossorigin="anonymous"></script>
+
+    {% block JSSim %}
+    {% endblock %}
+
+  </head>
+
+  <body>
+    {% block menu %}
+    <div class="Sim h">
+      <table class="Sim header">
+        <tr>
+          <th onclick="location.href='/Home'">Home</th>
+          <th onclick="location.href='/StudentSection'">Student Section</th>
+          {% block extraTabs %}
+          {% endblock %}
+        </tr>
+      </table>
+    </div>
+    {% endblock %}
+    <h1 class="Sim t">{% block title %}Simulations{% endblock %}</h1>
+
+    {% block content %}
+
+    <h1 class="Sim t" style="width:60%; background-color:#F76262;">Physics</h1>
+
+    <div class="Sim option" onclick="location.href='/StudentSection/simulations/bouncingBalls'">
+      <h1>Bouncing Balls</h1>
+    </div>
+
+    <div class="Sim option" onclick="location.href='/StudentSection/simulations/pendulum'">
+      <h1>Pendulum</h1>
+    </div>
+
+    <div class="Sim option" onclick="location.href='/StudentSection/simulations/spring'">
+      <h1>Spring<h1>
+    </div>
+
+    <div class="Sim option" onclick="location.href='/StudentSection/simulations/gravity'">
+      <h1>Gravity</h1>
+    </div>
+
+    <h1 class="Sim t" style="width:60%; background-color:#F76262;">Chemistry</h1>
+
+    <div class="Sim option" onclick="location.href='/StudentSection/simulations/idealGasLaws'">
+      <h1>Ideal Gas Laws</h1>
+    </div>
+
+    <div class="Sim option" onclick="location.href='/StudentSection/simulations/goldFoilExperiment'">
+      <h1>Gold Foil Experiment</h1>
+    </div>
+    {% endblock %}
+
+    {% block additionalData %}
+    {% endblock %}
+  </body>
+
+</html>

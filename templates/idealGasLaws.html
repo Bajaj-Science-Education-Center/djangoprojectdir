@@ -1,0 +1,41 @@
+{% extends "simTemplate.html" %}
+{% load static %}
+
+{% block simHead %} | Ideal Gas Laws{% endblock %}
+
+{% block JSSim %}
+
+  <script src="{% static 'JS/IdealGasLaws/IdealGasLaws2.js' %}"></script>
+  <script src="{% static 'JS/IdealGasLaws/Particle3.js' %}"></script>
+  <script src="{% static 'JS/IdealGasLaws/PlungerBox2.js' %}"></script>
+
+{% endblock %}
+
+{% block extraTabs %}
+  <th onclick="location.href='/StudentSection/simulations'" class="outline">All Simulations</th>
+{% endblock %}
+
+{% block title %}Ideal Gas Laws Simulation{% endblock %}
+
+{% block Properties %}
+
+<tr>
+  <td colspan="2">Number of Molecules</td>
+  <td colspan="2"><input type="range" min="100" max="500" value="200" id="nSlider" class="DataSlider"></td>
+  <td colspan="2" id="n">200</td>
+</tr>
+
+<tr>
+  <td colspan="2">Temperature</td>
+  <td colspan="2"><input type="range" min="0" max="100" value="50" id="temperatureSlider" class="DataSlider"></td>
+  <td colspan="2" id="temperature">5</td>
+</tr>
+
+<tr>
+  <td colspan="2">Height</td>
+  <td colspan="2"><input type="range" min="0" max="150" value="150" id="heightSlider" class="DataSlider"></td>
+  <td colspan="2" id="height">350</td>
+</tr>
+
+
+{% endblock %}

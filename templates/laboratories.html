@@ -1,0 +1,69 @@
+{% extends "format.html" %}
+{% load static %}
+
+{% block pageName %}Laboritories{% endblock %}
+
+{% block submenu %}
+<tr>
+  <td onclick="location.href='/Laboratories/physics'">Physics Lab</td>
+  <td onclick="location.href='/Laboratories/chemistry'">Chemistry Lab</td>
+  <td onclick="location.href='/Laboratories/biology'">Biology Lab</td>
+  <td onclick="location.href='/Laboratories/mathematics'">Mathematics Lab</td>
+  <td onclick="location.href='/Laboratories/computers'">Computer Lab</td>
+  <td onclick="location.href='/Laboratories/astronomy'">Innovation Lab</td>
+  <td onclick="location.href='/Laboratories/library'">Library</td>
+  <td onclick="location.href='/Laboratories/auditorium'">Auditorium</td>
+</tr>
+{% endblock %}
+
+{% block titleText %}Laboratories{% endblock %}
+
+{% block body %}
+
+<div class="general blue2 centre">
+  <h1><strong>Our Laboratories</strong></h1>
+  <p>Our laboratories provide our students with access to the latest top-of-the-line scientific instruments and tools so that they may experiment
+  and explore.</p>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/physics'">
+  <img class="IMG" src="{% static 'Images/physicsLab.jpg' %}">
+  <h1 class="caption right">Physics Lab</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/chemistry'">
+  <img class="IMG" src="{% static 'Images/chemistryLab.jpg' %}">
+  <h1 class="caption left">Chemistry Lab</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow"  onclick="location.href='/Laboratories/biology'">
+  <img class="IMG" src="{% static 'Images/biologyLab.jpg' %}">
+  <h1 class="caption right">Biology Lab</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/mathematics'">
+  <img class="IMG" src="{% static 'Images/mathLab.jpg' %}">
+  <h1 class="caption left">Mathematics Lab</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/computers'">
+  <img class="IMG" src="{% static 'Images/computerLab.jpg' %}">
+  <h1 class="caption right">Computer Lab</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/astronomy'">
+  <img class="IMG" src="{% static 'Images/astronomyLab.jpg' %}">
+  <h1 class="caption left">Innovation Lab</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/library'">
+  <img class="IMG" src="{% static 'Images/MultipurposeHall.jpg' %}">
+  <h1 class="caption right">Multipurpose Hall</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/auditorium'">
+  <img class="IMG" src="{% static 'Images/auditorium1.jpg' %}">
+  <h1 class="caption left">Open Air Amphitheatre</h1>
+</div>
+
+{% endblock %}

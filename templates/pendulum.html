@@ -1,0 +1,52 @@
+{% extends "simTemplate.html" %}
+{% load static %}
+
+{% block simHead %} | Pendulum{% endblock %}
+
+{% block JSSim %}
+
+  <script src="{% static 'JS/Pendulum/Pendulum1.js' %}"></script>
+  <script src="{% static 'JS/Pendulum/Bob1.js' %}"></script>
+
+{% endblock %}
+
+{% block extraTabs %}
+  <th onclick="location.href='/StudentSection/simulations'" class="outline">All Simulations</th>
+{% endblock %}
+
+{% block title %}Pendulum Simulation{% endblock %}
+
+{% block Properties %}
+
+<tr>
+  <td colspan="2">Mass</td>
+  <td colspan="2"><input type="range" min="1" max="10" value="1" id="MassSlider" class="DataSlider"></td>
+  <td colspan="2" id="Mass">1</td>
+</tr>
+
+<tr>
+  <td colspan="2">Length</td>
+  <td colspan="2"><input type="range" min="10" max="250" value="200" id="LengthSlider" class="DataSlider"></td>
+  <td colspan="2" id="Length">200</td>
+</tr>
+
+<tr>
+  <td colspan="2">Starting Angle</td>
+  <td colspan="2"><input type="range" min="0" max="90" value="30" id="AngleSlider" class="DataSlider"></td>
+  <td colspan="2" id="Angle">30</td>
+</tr>
+
+<tr>
+  <td colspan="2">Acceleration Due to Gravity</td>
+  <td colspan="2"><input type="range" min="0" max="100" value="7" id="gSlider" class="DataSlider"></td>
+  <td colspan="2" id="g">0.7</td>
+</tr>
+
+<tr>
+  <td colspan="2">Damping</td>
+  <td colspan="2"><input type="range" min="0" max="1000" value="1" id="DampingSlider" class="DataSlider"></td>
+  <td colspan="2" id="Damping">0.001</td>
+</tr>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "format.html" %}
+{% load static %}
+
+{% block pageName %}Gallery{% endblock %}
+
+{% block submenu %}
+{% endblock %}
+
+{% block titleText %}Gallery{% endblock %}
+
+{% block body %}
+
+<div class="general centre">
+  <h1><strong>Snap!</strong></h1>
+  <p>View our extensive gallery to view both special events and the everyday functioning of the centre.</p>
+</div>
+
+{% for image in images %}
+
+<div class="parallaxIMG hoverShadow">
+  <img class="IMG" src="/static/{{image.Image.path}}">
+  <h1 class="caption {{image.Alignment}}">{{image.Image.caption}}</h1>
+</div>
+
+{% endfor %}
+
+{% endblock %}

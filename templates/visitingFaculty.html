@@ -1,0 +1,52 @@
+{% extends "aboutUs.html" %}
+{% load static %}
+
+{% block pageName %}About Us | Visiting Faculty{% endblock %}
+
+{% block titleText %}Visiting Faculty{% endblock %}
+
+{% block body %}
+
+{% for faculty in visitingFaculty %}
+
+{% if faculty.colour == 0 %}
+<div class="general" style="padding: 50px 0px 125px 0px;">
+{% elif faculty.colour == 1 %}
+<div class="general blue1" style="padding: 50px 0px 125px 0px;">
+{% else %}
+<div class="general blue2" style="padding: 50px 0px 125px 0px;">
+{% endif %}
+
+  <table style="border-radius: 10px;">
+    <tr>
+      <!--<td rowspan="2" style="width:20%; padding:10px;"><img class="IMG" src="{% static faculty.Faculty.image_source %}" style="border-radius:10px;border: 2px solid #293462;width:100%;"></td>-->
+      <td style="text-align:left; font-size: 40px; padding: 10px;"><u>{{faculty.Faculty.name}}</u></td>
+    </tr>
+
+    <tr>
+      <td style="text-align:left;vertical-align:top;padding: 10px;">{{faculty.Faculty.description}}</td>
+    </tr>
+  </table>
+  <!--<h1><strong>{{faculty.VisitingFaculty.title}}</strong></h1>
+  <p>{{faculty.VisitingFaculty.message}}</p>-->
+
+{% if user.is_superuser %}
+  <h2 class="deleteNoticeButton" onclick="location.href='/DeleteFaculty/{{faculty.Faculty.id}}'"><strong>Delete Faculty</strong></h2>
+{% endif %}
+
+</div>
+{% endfor %}
+
+{% if user.is_superuser %}
+  <div class="general right blue1">
+    <h1 class="manageButton" onclick="location.href='/AddFacultyForm'" style="font-size: 40px; padding: 10px; margin: 0px 25%"><strong>Add Faculty</strong></h1>
+  </div>
+{% else %}
+  {% if visitingFaculty|length == 0 %}
+    <div class="general blue2" style="padding: 50px 0px 125px 0px;">
+      <h1 style="text-align:center;">There seem to be no visiting faculty at the moment.</h1>
+    </div>
+  {% endif %}
+{% endif %}
+
+{% endblock %}

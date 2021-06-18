@@ -1,0 +1,53 @@
+{% extends "simTemplate.html" %}
+{% load static %}
+
+{% block simHead %} | Gold Foil Experiment{% endblock %}
+
+{% block JSSim %}
+
+  <script src="{% static 'JS/GoldFoilExperiment/GoldFoilExperiment2.js' %}"></script>
+  <script src="{% static 'JS/GoldFoilExperiment/AlphaParticle2.js' %}"></script>
+  <script src="{% static 'JS/GoldFoilExperiment/GoldAtom1.js' %}"></script>
+
+{% endblock %}
+
+{% block extraTabs %}
+  <th onclick="location.href='/StudentSection/simulations'" class="outline">All Simulations</th>
+{% endblock %}
+
+{% block title %}Gold Foil Experiment Simulation{% endblock %}
+
+{% block Properties %}
+
+<tr>
+  <td colspan="2">Coulumb Constant</td>
+  <td colspan="2"><input type="range" min="0" max="1000" value="200" id="eSlider" class="DataSlider"></td>
+  <td colspan="2" id="e">2</td>
+</tr>
+
+<tr>
+  <td colspan="2">Number of Alpha Particles</td>
+  <td colspan="2"><input type="range" min="10" max="1000" value="100" id="pNumSlider" class="DataSlider"></td>
+  <td colspan="2" id="pNum">100</td>
+</tr>
+
+<tr>
+  <td colspan="2">Number of Gold Atoms</td>
+  <td colspan="2"><input type="range" min="2" max="20" value="10" id="aNumSlider" class="DataSlider"></td>
+  <td colspan="2" id="aNum">10</td>
+</tr>
+
+<tr>
+  <td colspan="2">Charge of an Alpha Particle</td>
+  <td colspan="2"><input type="range" min="0" max="500" value="20" id="pChargeSlider" class="DataSlider"></td>
+  <td colspan="2" id="pCharge">0.2</td>
+</tr>
+
+<tr>
+  <td colspan="2">Charge of Gold Atom Nucleus</td>
+  <td colspan="2"><input type="range" min="0" max="500" value="500" id="aChargeSlider" class="DataSlider"></td>
+  <td colspan="2" id="aCharge">5</td>
+</tr>
+
+
+{% endblock %}

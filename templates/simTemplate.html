@@ -1,0 +1,44 @@
+{% extends "simulations.html" %}
+{% load static %}
+
+{% block simHead %} | Template{% endblock %}
+
+{% block extraTabs %}
+  <th onclick="location.href='/StudentSection/simulations'" class="outline">All Simulations</th>
+{% endblock %}
+
+{% block title %}Template{% endblock %}
+
+{% block content %}
+  <div class="Sim canvasParent" id="canvasContainer">
+  </div>
+
+  <div class="Sim dataTable">
+
+    {% block controlPanel %}
+      <table class="Sim" id="dataTable">
+        <tr>
+          <th colspan="5" class="topLeft">Simulation Control Panel</th>
+          <th id="button" class="topRight" onclick="startStop()">Start</th>
+        </tr>
+
+        <tr>
+          <th class="subheading" colspan="2">Property</th>
+          <th class="subheading" colspan="2">Slider</th>
+          <th class="subheading" colspan="2">Value</th>
+        </tr>
+
+        {% block Properties %}
+
+        {% endblock %}
+
+        <tr>
+          <th id="button" colspan="6" class="bottom"></th>
+        </tr>
+
+      </table>
+    {% endblock %}
+
+  </div>
+
+{% endblock %}

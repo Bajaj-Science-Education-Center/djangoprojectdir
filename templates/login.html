@@ -1,0 +1,45 @@
+{% extends "format.html" %}
+{% load static %}
+
+{% block pageName %}Login{% endblock %}
+
+{% block submenu %}
+{% endblock %}
+
+{% block titleText %}Login{% endblock %}
+
+{% block body %}
+
+  <div class="general">
+    <form method="post" action="authenticate/" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table class="form">
+          <thead>
+            <tr>
+              <th colspan="2">Enter Your Information</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="Field">Username:</td>
+              <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+              <td class="Field">Password:</td>
+              <td><input type="password" name="password"></td>
+            </tr>
+          </tbody>
+          <thead>
+
+            <tr>
+              <th colspan="2"><input type="submit" name="submit" class="Submit" value="Login"></th>
+            </tr>
+          </thead>
+        </table>
+      </form>
+  </div>
+
+{% endblock %}
+
+{% block loginData %}
+{% endblock %}

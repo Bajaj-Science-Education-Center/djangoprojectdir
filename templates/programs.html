@@ -1,0 +1,116 @@
+{% extends "format.html" %}
+{% load static %}
+
+{% block pageName %}Batches & Activities{% endblock %}
+
+{% block submenu %}
+<tr>
+  <!--<td onclick="location.href='/Programs/science'">Science Practicals</td>
+  <td onclick="location.href='/Programs/regular'">Regular Practicals</td>
+  <td onclick="location.href='/Programs/scholars'">Scholar Batch</td>
+  <td onclick="location.href='/Programs/summerBatch'">Summer Batch</td>
+  <td onclick="location.href='/Programs/summerWorkshop'">Summer Workshop</td>
+  <td onclick="location.href='/Programs/math'">Math Workshop</td>
+  <td onclick="location.href='/Programs/youngScientist'">Young Scientist Exam</td>
+  <td onclick="location.href='/Programs/quiz'">Quiz</td>
+  <td onclick="location.href='/Programs/others'">Others</td>-->
+
+  <td onclick="location.href='/Programs/science'">Batches and Programs</td>
+  <td onclick="location.href='/Programs/regular'">Regular Activities</td>
+  <td onclick="location.href='/Programs/scholars'">Past Events</td>
+
+</tr>
+{% endblock %}
+
+{% block titleText %}Batches & Activities{% endblock %}
+
+{% block body %}
+
+<div class="general blue2 centre">
+  <h1><strong>Our Programs</strong></h1>
+  <p>Our programs are designed to provide each and every child with the opportunities and exposure that he or she needs to develop his or her
+    curiosity.</p>
+</div>
+
+<div class="general right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/science'">
+  <h1><strong>Batches and Programs        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>
+
+<div class="general blue2 right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/regular'">
+  <h1><strong>Regular Activities        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>
+
+<div class="general right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/scholars'">
+  <h1><strong>Past Events        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>
+
+<!--<div class="general blue2 right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/summerBatch'">
+  <h1><strong>Summer Batch        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>
+
+<div class="general right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/summerWorkshop'">
+  <h1><strong>Summer Workshop        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>
+
+<div class="general blue2 right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/math'">
+  <h1><strong>Math Workshop        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>
+
+<div class="general right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/youngScientist'">
+  <h1><strong>Young Scientist Exam        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>
+
+<div class="general blue2 right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/quiz'">
+  <h1><strong>Quiz        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>
+
+<div class="general right hoverShadow hUnderline" style="padding: 40px 0px;" onclick="location.href='/Programs/others'">
+  <h1><strong>Others        <i class="fas fa-arrow-circle-right"></i><strong></h1>
+</div>-->
+
+<!--<div class="parallaxIMG hoverShadow" onclick="location.href='/Programs/science'">
+  <img class="IMG" src="{% static 'Images/Physics Lab.jpg' %}">
+  <h1 class="caption right">Science Practicals</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Programs/regular'">
+  <img class="IMG" src="{% static 'Images/Chemistry Lab.jpg' %}">
+  <h1 class="caption left">Regular Practicals</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow"  onclick="location.href='/Programs/scholars'">
+  <img class="IMG" src="{% static 'Images/Biology Lab.jpg' %}">
+  <h1 class="caption right">Scholar Batch</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Programs/summerBatch'">
+  <img class="IMG" src="{% static 'Images/Mathematics Lab.jpg' %}">
+  <h1 class="caption left">Summer Batch</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Programs/summerWorkshop'">
+  <img class="IMG" src="{% static 'Images/Computer Lab.jpg' %}">
+  <h1 class="caption right">Summer Workshop</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Programs/math'">
+  <img class="IMG" src="{% static 'Images/Astronomy Lab.jpg' %}">
+  <h1 class="caption left">Math Workshop</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Programs/youngScientist'">
+  <img class="IMG" src="{% static 'Images/Library.jpg' %}">
+  <h1 class="caption right">Young Scientist Exam</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Programs/quiz'">
+  <img class="IMG" src="{% static 'Images/Auditorium.jpg' %}">
+  <h1 class="caption left">Quiz</h1>
+</div>
+
+<div class="parallaxIMG hoverShadow" onclick="location.href='/Programs/others'">
+  <img class="IMG" src="{% static 'Images/Auditorium.jpg' %}">
+  <h1 class="caption right">Others</h1>
+</div>-->
+
+{% endblock %}

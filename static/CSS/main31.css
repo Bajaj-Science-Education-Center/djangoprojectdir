@@ -1,0 +1,665 @@
+/*
+Colour Scheme:
+#293462
+#216583
+#F76262
+#FFF1C1
+*/
+.container-home {
+  width:500px;
+  padding-top: 8em;
+  margin-bottom: 500px;
+}
+.tiny-space {
+  font-size: 1px;
+}
+.about{
+  width:500px;
+}
+
+body, div, table, h1, h2 {
+  margin: 0px;
+  margin: auto;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+body {
+  background-color: #FFF1C1;
+}
+
+canvas.particles-js-canvas-el {
+  z-index: 4;
+}
+
+table.nameAndLogo {
+  position: relative;
+  z-index: 5;
+  width: 90%;
+}
+
+table.nameAndLogo th {
+  font-size: 70px;
+  text-align: right;
+}
+
+table.nameAndLogo td {
+  font-size: 25px;
+  text-align: right;
+}
+
+div.header {
+  align: center;
+  color: #FFF1C1;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  background-color: #293462;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+}
+
+div.menubar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  cursor: pointer;
+  z-index: 6;
+  /*box-shadow: 0px 1px 1px grey;*/
+}
+
+div.menubar div.top {
+  align: center;
+  color: #FFF1C1;
+  background-color: #216583;
+  padding: 0px;
+
+  box-shadow: 0px 5px 5px #222222;
+}
+
+div.menubar div.top table.mainMenu {
+  width: 100%;
+}
+
+div.menubar div.top table.mainMenu tr td {
+  font-size: 25px;
+  width: 10%;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+div.menubar div.top table.mainMenu tr td:hover {
+  background-color: #FFF1C1;
+  color: #216583;
+  font-weight: bold;
+}
+
+div.menubar div.bottom {
+  align: center;
+  color: #FFF1C1;
+  background-color: #F76262;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+div.menubar div.bottom table.subMenu tr td{
+  width: 5%;
+  padding: 5px 0px;
+}
+
+div.menubar div.bottom table.subMenu tr td:hover {
+  background-color: #FFF1C1;
+  color: #F76262;
+  font-weight: bold;
+}
+
+div.titleIMG {
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 100%;
+  height: 400px;
+
+  position: relative;
+  bottom: 80px;
+
+  perspective: 1;
+
+  z-index: -1;
+}
+
+img.titleImage {
+  object-fit: cover;
+  width: 100%;
+  height: 600;
+
+  position: relative;
+  bottom: 130px;
+
+  z-index: -2;
+}
+
+h1.titleText {
+  width: 50%;
+  z-index: -1;
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+
+  font-size: 60px;
+  color: #FFF1C1;
+
+  background-color: #293462;
+  padding: 15px;
+  border-radius: 15px;
+
+  box-shadow: 5px 5px 5px #222222;
+}
+
+div.footer {
+  background-color: #216583;
+  color: #FFF1C1;
+
+  width: 100%;
+
+  font-size: 20px;
+
+  margin-top: 0px;
+}
+
+table.footer {
+  padding: 15px 0px;
+}
+
+table.footer td.a {
+  color: #293462;
+  padding-left: 20px;
+}
+
+table.footer td.b {
+  padding-right: 20px;
+}
+
+div.general {
+  width: 100%;
+  background-color: #F76262;
+  color: #FFF1C1;
+  text-align: left;
+  margin-top: -11px;
+  padding: 45px 0px 75px 0px;
+
+  cursor: default;
+}
+
+div.general.right h1,  div.general.right p {
+  text-align: right;
+}
+
+div.general.centre h1,  div.general.centre p {
+  text-align: center;
+}
+
+div.general.blue1 {
+  background-color: #216583;
+}
+
+div.general.blue2 {
+  background-color: #293462;
+}
+
+div.general h1 {
+  text-align: left;
+  font-size: 50px;
+  margin: 5px 40px;
+}
+
+div.general p {
+  text-align: left;
+  font-size: 20px;
+  margin: 5px 40px;
+}
+
+div.parallaxIMG {
+  width: 100%;
+  height: 300px;
+}
+
+div.parallaxIMG img.IMG {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+
+  position: relative;
+
+  z-index: -2;
+}
+
+div.parallaxIMG h1.caption {
+  position: relative;
+  bottom: 100px;
+
+  color: #FFF1C1;
+  background-color: #216583;
+
+  padding: 5px;
+  border-radius: 10px;
+
+  font-size: 20px;
+
+  width: 25%;
+
+  box-shadow: 5px 5px 5px #222222;
+}
+
+div.parallaxIMG h1.caption.left {
+  right: 25%;
+}
+
+div.parallaxIMG h1.caption.right {
+  left: 25%;
+}
+
+div.hoverShadow:hover {
+  box-shadow: 0px 0px 50px 0px #000000;
+}
+
+div.hUnderline:hover h1 {
+  text-decoration: underline;
+}
+
+div.general table {
+  width: 90%;
+  background-color: #216583;
+
+  padding: 10px;
+  border-radius: 5px;
+}
+
+div.general table th, div.general table td {
+  border-radius: 2px;
+  width: 33%;
+}
+
+div.general table th {
+  background-color: #293462;
+  font-size: 30px;
+
+}
+
+div.general table td {
+  background-color: #216583;
+  color: #FFF1C1;
+
+  font-size: 20px;
+}
+
+div.general.blue1 table {
+  background-color: #F76262;
+}
+
+div.general.blue2 table th {
+  background-color: #F76262;
+}
+
+div.general.blue1 table td {
+  background-color: #F76262;
+}
+
+div.general.blue2 table td {
+  color: #FFF1C1;
+}
+
+div.general table.form {
+  padding: 0px;
+  border-radius: 5px;
+  background-color: #216583;
+}
+
+div.general table.form th {
+  font-size: 50px;
+  margin: 0px;
+
+  padding: 10px;
+}
+
+div.general table.form td {
+  font-size: 30px;
+  padding: 10px;
+}
+
+div.general table.form td input {
+  width: 90%;
+  font-size: 30px;
+  text-align: center;
+
+  color: #FFF1C1;
+
+  background-color: #216583;
+  border: 2px solid #FFF1C1;
+  border-radius: 5px;
+}
+
+div.general table.form input.Submit {
+  font-size: 30px;
+  width: 75%;
+  color: #FFF1C1;
+  background-color: #216583;
+  border: 0px;
+  border-radius: 5px;
+}
+
+div.general table.form input.Submit:hover {
+  color: #216583;
+  background-color: #FFF1C1;
+  cursor: pointer;
+}
+
+div.notice {
+  background-color: #F76262;
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+
+  border: 5px dashed #FFF1C1;
+}
+
+div.notice h1.link {
+  font-size: 20px;
+  color: #FFF1C1;
+
+  padding: 5px;
+
+  background-color: #216583;
+  border-radius: 5px;
+
+  width: 50%;
+
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+div.notice h1.link:hover {
+  color: #216583;
+  background-color: #FFF1C1;
+
+  cursor: pointer;
+}
+
+div.notice h1.link.subsidiary {
+  width: 50%;
+  background-color: #293462;
+}
+
+div.notice h1.link.subsidiary:hover {
+  color: #293462;
+  background-color: #FFF1C1;
+}
+
+div.Sim.h {
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+  color: #FFF1C1;
+}
+
+div.Sim.h table.Sim.header {
+  align: center;
+  background-color: #F76262;
+  width: 100%;
+}
+
+div.Sim.h table.Sim.header th {
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  background-color: #F76262;
+
+  border-radius: 10px;
+
+  font-size: 30px;
+  cursor: pointer;
+}
+
+div.Sim.h table.Sim.header th:hover {
+  color: #F76262;
+  background-color: #FFF1C1;
+}
+
+div.Sim.h table.Sim.header th.outline {
+  border: 2px solid #FFF1C1;
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+h1.Sim.t {
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #293462;
+
+  width: 50%;
+
+  color: #FFF1C1;
+}
+
+div.Sim.option {
+  background-color: #216583;
+  margin: 40px 20px;
+
+  border-radius: 10px;
+  border: 5px solid #293462;
+  color: #FFF1C1;
+
+  padding: 50px;
+}
+
+div.Sim.option:hover {
+  background-color: #F76262;
+  cursor: pointer;
+}
+
+div.Sim.canvasParent {
+  border: 5px solid #293462;
+  border-radius: 30px;
+  background-color: #216583;
+
+  width: 900px;
+  height: 500px;
+
+  margin: 50px auto;
+}
+
+canvas#Simulation {
+  width: 800px;
+  height: 450px;
+  background-color: #FFF1C1;
+
+  border: 3px solid #293462;
+  border-radius: 10px;
+
+  margin: 25px auto;
+}
+
+table#dataTable {
+  width: 900px;
+  background-color: #293462;
+  color: #FFF1C1;
+  table-layout: fixed;
+
+  border-radius: 10px;
+
+  border-spacing: 5px;
+  border-collapse: separate;
+
+  margin-bottom: 20px;
+
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+table#dataTable th {
+  background-color: #216583;
+  padding: 10px;
+  margin: 10px;
+
+  font-size: 30px;
+}
+
+table#dataTable th.topLeft {
+  border-top-left-radius: 10px;
+}
+
+table#dataTable th.subheading {
+  font-size: 20px;
+}
+
+table#dataTable th.topRight {
+border-top-right-radius: 10px;
+}
+
+table#dataTable th.topRight:hover {
+  cursor: pointer;
+}
+
+table#dataTable th.bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+table#dataTable td {
+  background-color: #F76262;
+  color: #FFF1C1;
+
+  padding: 2px;
+}
+
+div.general h1.manageButton {
+  text-align: center;
+  border: 2px #FFF1C1 solid;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 75px;
+
+  cursor: pointer;
+}
+
+div.general h1.manageButton:hover {
+  color:#F76262;
+  background-color: #FFF1C1;
+}
+
+div.general.blue1 h1.manageButton:hover {
+  color:#216583;
+  background-color: #FFF1C1;
+}
+
+div.general.blue2 h1.manageButton:hover {
+  color:#293462;
+  background-color: #FFF1C1;
+}
+
+div.general h2.deleteNoticeButton {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-right: 5%;
+  border: 2px #FFF1C1 solid;
+  border-radius: 10px;
+
+  width: 25%;
+
+  float: right;
+
+  cursor: pointer;
+}
+
+div.general.white {
+  background-color: #FFF1C1;
+}
+
+div.general h2.deleteNoticeButton:hover {
+  background-color: #FFF1C1;
+  color: #F76262;
+}
+
+div.general.blue1 h2.deleteNoticeButton:hover {
+  background-color: #FFF1C1;
+  color: #216583;
+}
+
+div.general.blue2 h2.deleteNoticeButton:hover {
+  background-color: #FFF1C1;
+  color: #293462;
+}
+
+input {
+  width: 90%;
+  background-color: #F76262;
+  border: 2px #216583 solid;
+  border-radius: 4px;
+  color: #FFF1C1;
+}
+
+input.title {
+  font-size: 30px;
+}
+
+input.message {
+  font-size: 15px;
+}
+
+input.submit {
+  height: 90%;
+  width: 40%;
+
+  background-color: #293462;
+
+  font-size: 25px;
+  /*border: 2px #FFF1C1 solid;*/
+  border-radius: 10px;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+input.submit:hover {
+  background-color: #FFF1C1;
+  color: #293462;
+}
+
+div.management {
+  background-color: #F76262;
+  margin-top: -31px;
+  margin-bottom: -31px;
+  padding: 40px;
+}
+
+table.management {
+  margin: 10px auto;
+  /*padding: 20px;*/
+  text-align: left;
+  background-color:#FFF1C1;
+
+  border-radius: 20px;
+  border: 4px solid #293462;
+}
+
+table.management th {
+  background-color: #293462;
+  color: #FFF1C1;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+table.management td {
+  background-color: #216583;
+  color: #FFF1C1;
+  padding: 20px;
+  font-size: 25px;
+}
+
+ul {
+  margin: 20px;
+  font-size: 20px;
+}

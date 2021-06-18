@@ -1,0 +1,47 @@
+{% extends "format.html" %}
+{% load static %}
+
+{% block pageName %}Add Faculty{% endblock %}
+
+{% block submenu %}
+{% endblock %}
+
+{% block titleText %}Add Faculty{% endblock %}
+
+{% block body %}
+
+<div class="general white">
+
+  <form action="/AddFaculty/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table class="Sim" id="dataTable">
+      <tr>
+        <th colspan="2">Faculty Details</th>
+      </tr>
+
+      <tr>
+        <td><strong>Name</strong></td>
+        <td><input type="text" class="title" name="name"></td>
+      </tr>
+
+      <tr>
+        <td><strong>Description</strong></td>
+        <td><input type="text" class="message" name="description"></td>
+      </tr>
+
+      <!--<tr>
+        <td><strong>Image</strong></td>
+        <td><input type="file" class="message" name="image"></td>
+      </tr>-->
+
+      <tr>
+        <th colspan="2"><input type="submit" class="submit" value="Add Faculty"></th>
+      </tr>
+
+    </table>
+    <h1>Note:Please only submit .jpg files</h1>
+  </form>
+
+</div>
+
+{% endblock %}

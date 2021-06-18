@@ -1,0 +1,64 @@
+{% extends "format.html" %}
+{% load static %}
+
+{% block pageName %}Notice Board{% endblock %}
+
+{% block submenu %}
+{% endblock %}
+
+{% block titleText %}Notice Board{% endblock %}
+
+{% block body %}
+
+{% if trivia %}
+<div class="general blue1 hoverShadow hUnderline" style="padding: 50px 0px 125px 0px;">
+  <div style="border: 5px solid #FFF1C1; width: 90%; padding: 30px;">
+    <h1><strong>{{triviaTitle}}</strong></h1>
+    <p>{{trivia}}</p>
+  </div>
+  {% if user.is_superuser %}
+    <h2 class="deleteNoticeButton" onclick="location.href='/NoticeBoard/triviaForm'"><strong>Edit Trivia</strong></h2>
+  {% endif %}
+</div>
+{% elif user.is_superuser %}
+
+<div class="general blue1 hoverShadow hUnderline" style="padding: 50px 0px 125px 0px;">
+
+  <h1 class="manageButton" onclick="location.href='/NoticeBoard/triviaForm'" style="font-size: 40px; padding: 10px; margin: 0px 25%"><strong>Add Trivia</strong></h1>
+
+</div>
+
+{% endif %}
+
+{% for notice in notices %}
+
+{% if notice.colour == 0 %}
+<div class="general hoverShadow hUnderline" style="padding: 50px 0px 125px 0px;">
+{% elif notice.colour == 1 %}
+<div class="general blue1 hoverShadow hUnderline" style="padding: 50px 0px 125px 0px;">
+{% else %}
+<div class="general blue2 hoverShadow hUnderline" style="padding: 50px 0px 125px 0px;">
+{% endif %}
+  <h1><strong>{{notice.Notice.title}}</strong></h1>
+  <p>{{notice.Notice.message}}</p>
+
+{% if user.is_superuser %}
+  <h2 class="deleteNoticeButton" onclick="location.href='/DeleteNotice/{{notice.Notice.id}}'"><strong>Delete Notice</strong></h2>
+{% endif %}
+
+</div>
+{% endfor %}
+
+{% if user.is_superuser %}
+  <div class="general right blue1">
+    <h1 class="manageButton" onclick="location.href='/AddNoticeForm'" style="font-size: 40px; padding: 10px; margin: 0px 25%"><strong>Add Notice</strong></h1>
+  </div>
+  {% else %}
+    {% if notices|length == 0 %}
+      <div class="general blue2" style="padding: 50px 0px 125px 0px;">
+        <h1 style="text-align:center;">There seem to be no Notices at the moment.</h1>
+      </div>
+    {% endif %}
+  {% endif %}
+
+{% endblock %}

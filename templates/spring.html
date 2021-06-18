@@ -1,0 +1,59 @@
+{% extends "simTemplate.html" %}
+{% load static %}
+
+{% block simHead %} | Spring{% endblock %}
+
+{% block JSSim %}
+
+  <script src="{% static 'JS/Spring/Spring1.js' %}"></script>
+  <script src="{% static 'JS/Spring/coil.js' %}"></script>
+  <script src="{% static 'JS/Spring/mass.js' %}"></script>
+  <script src="{% static 'JS/Spring/SpringSystem.js' %}"></script>
+
+{% endblock %}
+
+{% block extraTabs %}
+  <th onclick="location.href='/StudentSection/simulations'" class="outline">All Simulations</th>
+{% endblock %}
+
+{% block title %}Spring Simulation{% endblock %}
+
+{% block Properties %}
+
+  <tr>
+    <td colspan="2">Mass</td>
+    <td colspan="2"><input type="range" min="50" max="500" value="100" id="MassSlider" class="DataSlider"></td>
+    <td colspan="2" id="Mass">100</td>
+  </tr>
+
+  <tr>
+    <td colspan="2">Spring Constant</td>
+    <td colspan="2"><input type="range" min="0" max="20" value="1" id="SpringConstantSlider" class="DataSlider"></td>
+    <td colspan="2" id="SpringConstant">1</td>
+  </tr>
+
+  <tr>
+    <td colspan="2">Mean Length</td>
+    <td colspan="2"><input type="range" min="200" max="300" value="250" id="MeanLengthSlider" class="DataSlider"></td>
+    <td colspan="2" id="MeanLength">250</td>
+  </tr>
+
+  <tr>
+    <td colspan="2">Displacement</td>
+    <td colspan="2"><input type="range" min="0" max="200" value="100" id="DisplacementSlider" class="DataSlider"></td>
+    <td colspan="2" id="Displacement">100</td>
+  </tr>
+
+  <tr>
+    <td colspan="2">Friction</td>
+    <td colspan="2"><input type="range" min="0" max="1000" value="0" id="FrictionSlider" class="DataSlider"></td>
+    <td colspan="2" id="Friction">0</td>
+  </tr>
+
+  <tr>
+    <td colspan="2">Acceleration due to Gravity</td>
+    <td colspan="2"><input type="range" min="0" max="10" value="1" id="gSlider" class="DataSlider"></td>
+    <td colspan="2" id="g">1</td>
+  </tr>
+
+{% endblock %}
