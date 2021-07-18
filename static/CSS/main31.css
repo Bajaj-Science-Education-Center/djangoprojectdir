@@ -55,10 +55,10 @@ table.nameAndLogo td {
 
 div.header {
   align: center;
-  color: #2C2E43;
+  color: #4951c0;
   padding-top: 70px;
   padding-bottom: 10px;
-  background-color: #B2B1B9;
+  background-color: #ffff;
   cursor: pointer;
 
   position: relative;
@@ -76,8 +76,8 @@ div.menubar {
 
 div.menubar div.top {
   align: center;
-  color: #FFF1C1;
-  background-color: #222831;
+  color: #000;
+  background-color: #23233b;
   padding: 0px;
 }
 
@@ -127,7 +127,7 @@ h1.titleText {
   font-size: 60px;
   color: #FFF1C1;
 
-  background-color: #293462;
+  background-color: #6f86df;
   padding: 15px;
   border-radius: 15px;
 

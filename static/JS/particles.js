@@ -28,21 +28,21 @@ var pJS = function(tag_id, params){
         }
       },
       color: {
-        value: '#C9D6DF'
+        value: '#77ACF1'
       },
       shape: {
-        type: 'circle',
+        type: '',
         stroke: {
-          width: 0,
-          color: '#C9D6DF'
+          width: 0.00002,
+          color: '#fff'
         },
         polygon: {
           nb_sides: 5
         },
         image: {
           src: '',
-          width: 100,
-          height: 100
+          width: 10,
+          height: 10
         }
       },
       opacity: {
@@ -68,7 +68,7 @@ var pJS = function(tag_id, params){
       line_linked: {
         enable: true,
         distance: 100,
-        color: '#f76262',
+        color: '#000',
         opacity: 1,
         width: 1
       },
