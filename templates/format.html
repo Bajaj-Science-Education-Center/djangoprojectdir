@@ -205,18 +205,7 @@
     {% endblock %}
   </body>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-    });
-  </script>
+  <script src="{% static 'JS/slider.js' %}"></script>
   <script src="{% static 'JS/home.js' %}"></script>
 
 </html>

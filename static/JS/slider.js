@@ -1,13 +1,20 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: auto,
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
   autoplay: {
-    delay: 1000,
+    delay: 6000,
     disableOnInteraction: false,
   },
 });
-
-
+var swiper = new Swiper(".mySwiper2", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
