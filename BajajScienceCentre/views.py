@@ -92,27 +92,27 @@ def laboratories(request):
 
 def physics(request):
     context = {'Title':'Physics Lab'}
-    return(render(request, 'physicsLab.html', context))
+    return(render(request, 'Labs/physicsLab.html', context))
 
 def chemistry(request):
     context = {'Title':'Chemistry Lab'}
-    return(render(request, 'chemistryLab.html', context))
+    return(render(request, 'Labs/chemistryLab.html', context))
 
 def biology(request):
     context = {'Title':'Biology Lab'}
-    return(render(request, 'biologyLab.html', context))
+    return(render(request, 'Labs/biologyLab.html', context))
 
 def mathematics(request):
     context = {'Title':'Mathematics Lab'}
-    return(render(request, 'mathLab.html', context))
+    return(render(request, 'Labs/mathLab.html', context))
 
 def computers(request):
     context = {'Title':'Computer Lab'}
-    return(render(request, 'computerLab.html', context))
+    return(render(request, 'Labs/computerLab.html', context))
 
 def astronomy(request):
     context = {'Title':'Astronomy Lab'}
-    return(render(request, 'astronomyLab.html', context))
+    return(render(request, 'Labs/astronomyLab.html', context))
 
 def library(request):
     context = {'Title':'Multipurpose Hall'}

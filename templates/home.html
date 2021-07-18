@@ -8,8 +8,40 @@
 {% block titleText %}Home{% endblock %}
 
 {% block body %}
+<div class="swiper-container mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" >
+    <img class="swiper-back" src="{% static 'Images/Slide1.jpg' %}" alt="">
+    <img class="swiper-image" src="{% static 'Images/Slide1.jpg' %}" alt="">
+  </div>
+    <div class="swiper-slide">
+      <img class="swiper-back" src="{% static 'Images/Slide2.jpg' %}" alt="">
+    <img class="swiper-image" src="{% static 'Images/Slide2.jpg' %}" alt="">
+    </div>
+    <div class="swiper-slide">
+      <img class="swiper-back" src="{% static 'Images/Slide3.jpg' %}" alt="">
+      <img class="swiper-image" src="{% static 'Images/Slide3.jpg' %}" alt="">
+    </div>
+    <div class="swiper-slide">
+      <img class="swiper-back" src="{% static 'Images/Slide4.jpg' %}" alt="">
+      <img class="swiper-image" src="{% static 'Images/Slide4.jpg' %}" alt="">
+    </div>
+    <div class="swiper-slide">
+      <img class="swiper-back" src="{% static 'Images/Slide5.png' %}" alt="">
+      <img class="swiper-image" src="{% static 'Images/Slide5.png' %}" alt="">
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>  
+<!-- <figure class="icon-cards mt-3">
+  <div class="icon-cards__content">
+    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">🙂</span></div>
+    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😊</span></div>
+    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😀</span></div>
+  </div>
+</figure> -->
 
-<div class="general">
+<!-- <div class="general">
   <h1><strong>What is the Bajaj Science Centre?</strong></h1>
   <p>Bajaj Science Education Centre is a place for children to learn science through exploration and play. 
      Our goal is to spark curiosity in their minds and to inculcate a sense of excitement in studying science.
@@ -37,9 +69,9 @@
 </div>
 
 <div class="general">
-  <p>The Bajaj Science Center has different batches for different students at different grade levels with different learning
-  goals. We have different classes for studnets of grades 5, 6, 7, 8, 9 and 10. Grade 7 is split into the Pracicals Batch and the
-Scholars Batch. Grade 8 is split into the Practicals Batch, Scholars Batch and the Pragyaan (Olympiad) Batch.</p>
+  <h1><strong>How does Bajaj Science Education Centre impart learning to students?</strong></h1>
+  <p>Students are admitted to Bajaj Science Education Centre through entrance exams held at the 5th and 7th standard levels. The Centre facilitates about 500 students in carrying out concept-oriented experiments and demonstrations, which stimulate their curiosity and introduces them to the method of science. They also conduct experiments related to their school curriculum. Students are encouraged to ask questions, explain concepts and undertake projects - all of which help learning. Some of them are mentored for participation in National level competitive exams and other competitions.
+  </p>
 
 </div>
 
@@ -51,6 +83,46 @@ Scholars Batch. Grade 8 is split into the Practicals Batch, Scholars Batch and t
 <div class="general right blue2">
   <p>The Science Center has a host of distinguished mentors, staff and visiting faculty.</p>
 
+</div> -->
+
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+<!-- about -->
+<!-- end about -->
+
+
+<div class="container-fluid">
+  <div class="blog-card">
+      <div class="media col-sm-6 col-xs-6" style="background-image:url({% static 'Images/classroom6.jpg' %})"></div>
+      <div class="card-body col-sm-6 col-xs-6">
+          <p class="tagline text-center">Featured</p>
+          <h3 class="title text-center">Why is the Bajaj Science Education Center Important?</h3>
+          <div class="divider"></div>
+          <p class="paragraph text-justify">Students are admitted to Bajaj Science Education Centre through entrance exams held at the 5th and 7th standard levels. The Centre facilitates about 500 students in carrying out concept-oriented experiments and demonstrations, which stimulate their curiosity and introduces them to the method of science. They also conduct experiments related to their school curriculum. Students are encouraged to ask questions, explain concepts and undertake projects - all of which help learning. Some of them are mentored for participation in National level competitive exams and other competitions.
+          </p>
+      </div>
+  </div>
+  <div class="blog-card">
+    <div class="card-body col-sm-6 col-xs-6">
+        <p class="tagline text-center">Featured</p>
+        <h3 class="title text-center">What is the Bajaj Science Education Center?</h3>
+        <div class="divider"></div>
+        <p class="paragraph text-justify">Bajaj Science Education Centre is a place for children to learn science through exploration and play. 
+          Our goal is to spark curiosity in their minds and to inculcate a sense of excitement in studying science.
+          We strive to nurture creativity and innovation.</p>
+    </div>
+    <div class="media col-sm-6 col-xs-6" style="background-image:url({% static 'Images/classroom4.jpg' %})"></div>
+  </div>
+  <div class="blog-card">
+    <div class="media col-sm-6 col-xs-6" style="background-image:url({% static 'Images/classroom.jpg' %})"></div>
+    <div class="card-body col-sm-6 col-xs-6">
+        <p class="tagline text-center">Featured</p>
+        <h3 class="title text-center">How does Bajaj Science Education Centre impart learning to students?</h3>
+        <div class="divider"></div>
+        <p class="paragraph text-justify">Students are admitted to Bajaj Science Education Centre through entrance exams held at the 5th and 7th standard levels. The Centre facilitates about 500 students in carrying out concept-oriented experiments and demonstrations, which stimulate their curiosity and introduces them to the method of science. They also conduct experiments related to their school curriculum. Students are encouraged to ask questions, explain concepts and undertake projects - all of which help learning. Some of them are mentored for participation in National level competitive exams and other competitions.
+        </p>
+    </div>
+</div>
 </div>
 
 {% endblock %}

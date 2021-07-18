@@ -1,7 +1,7 @@
 {% extends "format.html" %}
 {% load static %}
 
-{% block pageName %}Laboritories{% endblock %}
+{% block pageName %}Infrastructure{% endblock %}
 
 {% block submenu %}
 <tr>
@@ -21,12 +21,67 @@
 {% block body %}
 
 <div class="general blue2 centre">
-  <h1><strong>Our Laboratories</strong></h1>
-  <p>Our laboratories provide our students with access to the latest top-of-the-line scientific instruments and tools so that they may experiment
+  <h1><strong>Our Infrastructure</strong></h1>
+  <p class="laboratoriesC">Our laboratories provide our students with access to the latest top-of-the-line scientific instruments and tools so that they may experiment.It has six laboratories (Physics, Chemistry, Mathematics, Biology, Electronics and Computers, Astronomy). Each laboratory is equipped for carrying out the prescribed experiments and also has the pedagogic tools and teaching aids required for imparting learning. The Centre also houses a library, an auditorium, an exhibition hall and an open-air amphitheatre.
   and explore.</p>
 </div>
 
-<div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/physics'">
+
+<main class="page-content">
+  <div class="card">
+      <div class="content">
+          <h2 class="title">Physics Lab</h2>
+          <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><button onclick="location.href='/Laboratories/physics'" class="btn">Let's Go</button>
+      </div>
+  </div>
+  <div class="card">
+      <div class="content">
+          <h2 class="title">Mathematics Lab</h2>
+          <p class="copy">Plan your next beach trip with these fabulous destinations</p><button onclick="location.href='/Laboratories/mathematics'" class="btn">Let's Go</button>
+      </div>
+  </div>
+  <div class="card">
+      <div class="content">
+          <h2 class="title">ICT Lab</h2>
+          <p class="copy">It's the desert you've always dreamed of</p><button onclick="location.href='/Laboratories/computers'" class="btn">Let's Go</button>
+      </div>
+  </div>
+  <div class="card">
+      <div class="content">
+          <h2 class="title">Maker's Space</h2>
+          <p class="copy">Seriously, straight up, just blast off into outer space today</p><button onclick="location.href='/Laboratories/astronomy'" class="btn">Let's Go</button>
+      </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <h2 class="title">Multipurpose Hall</h2>
+        <p class="copy">Seriously, straight up, just blast off into outer space today</p><button onclick="location.href='/Laboratories/library'" class="btn">Let's Go</button>
+    </div>
+</div>
+<div class="card">
+  <div class="content">
+      <h2 class="title">Open Air Amphitheatre</h2>
+      <p class="copy">Seriously, straight up, just blast off into outer space today</p><button onclick="location.href='/Laboratories/auditorium'" class="btn">Let's Go</button>
+  </div>
+</div>
+<div class="card">
+  <div class="content">
+      <h2 class="title">Chemistry Lab</h2>
+      <p class="copy">Seriously, straight up, just blast off into outer space today</p><button onclick="location.href='/Laboratories/chemistry'" class="btn">Let's Go</button>
+  </div>
+</div>
+<div class="card">
+  <div class="content">
+      <h2 class="title">Biology Lab</h2>
+      <p class="copy">Seriously, straight up, just blast off into outer space today</p><button onclick="location.href='/Laboratories/biology'" class="btn">Let's Go</button>
+  </div>
+</div>
+</main>
+
+</div>
+
+
+<!-- <div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/physics'">
   <img class="IMG" src="{% static 'Images/physicsLab.jpg' %}">
   <h1 class="caption right">Physics Lab</h1>
 </div>
@@ -64,6 +119,6 @@
 <div class="parallaxIMG hoverShadow" onclick="location.href='/Laboratories/auditorium'">
   <img class="IMG" src="{% static 'Images/auditorium1.jpg' %}">
   <h1 class="caption left">Open Air Amphitheatre</h1>
-</div>
+</div> -->
 
 {% endblock %}
