@@ -13,6 +13,8 @@ var swiper = new Swiper(".mySwiper2", {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
+  spaceBetween: 30,
+  loop: true,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,

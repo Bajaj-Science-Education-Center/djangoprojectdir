@@ -7,6 +7,10 @@ Colour Scheme:
 */
 @import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .container-home {
   width:500px;
   padding-top: 8em;
@@ -18,6 +22,7 @@ Colour Scheme:
 
 body, div, table, h1, h2 {
   margin: 0px;
+  overflow-x: hidden;
   margin: auto;
   font-family: 'Carme', sans-serif;
   text-align: center;

@@ -18,6 +18,10 @@ body {
   height: 500px;
 }
 
+.swiper-wrapper{
+  overflow-x: hidden;
+}
+
 .swiper-slide{
   text-align: center;
   font-size: 18px;
@@ -276,14 +280,9 @@ svg{
     font-weight:600
   }
 }
-/* Image Hero */
 
-.row2 {
-  max-width: 1000px;
-}
-.card2 {
-  width: 100%;
-}
+
+/* Image Hero */
 .card2 .wrapper2 {
   z-index: 0;
   background-color: #fff;
@@ -292,45 +291,34 @@ svg{
   overflow: hidden;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
-.card2 .wrapper2:hover .data2 {
-  transform: translateY(0em);
-}
-.card2 .data2 {
+.card2 {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  transform: translateY(calc(70px + 3em));
-  transition: transform 0.3s;
+  width: 90%;
 }
-.card2 .data2 .content2 {
+.card2{
   padding: 1em;
   position: relative;
   z-index: 1;
 }
-.card2 .title2 {
+.card2{
   font-size: 40px;
   text-decoration: none;
 }
-.card2 .text2 {
+.card2{
   height: auto;
   margin: 10px;
   font-size: 20px;
 }
-
-.example-1 .content2 {
+.example-1{
   z-index: 2;
   background-color: #fff;
   box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
 }
-.example-1 .title2 a {
+.example-1{
   color: #000;
 }
-.title2{
-  margin-bottom: 20px;
-}
-.text2{
-  text-align: justify;
-}
+
 
 /* Second Swiper */
 .swiper-back1{
