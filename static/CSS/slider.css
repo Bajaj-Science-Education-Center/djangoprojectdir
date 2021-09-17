@@ -138,7 +138,6 @@ svg{
 {
   color:#fff;
   font-size:16px;
-  text-transform:uppercase;
   margin-top:5px;
   letter-spacing:2px
 }
@@ -223,7 +222,6 @@ svg{
 .social-icons li.title
 {
   margin-right:15px;
-  text-transform:uppercase;
   color:#96a2b2;
   font-weight:700;
   font-size:13px

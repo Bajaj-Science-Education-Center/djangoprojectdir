@@ -11,6 +11,9 @@
 {% block body %}
 
 {% if trivia %}
+<div class="general center blue2">
+  <h1 style="text-align: center;"><strong>Trivia</strong></h1>
+</div>
 <div class="general blue1 hoverShadow hUnderline" style="padding: 50px 0px 125px 0px;">
   <div style="border: 5px solid #FFF1C1; width: 90%; padding: 30px;">
     <h1><strong>{{triviaTitle}}</strong></h1>
@@ -27,9 +30,12 @@
   <h1 class="manageButton" onclick="location.href='/NoticeBoard/triviaForm'" style="font-size: 40px; padding: 10px; margin: 0px 25%"><strong>Add Trivia</strong></h1>
 
 </div>
-
+<hr>
 {% endif %}
 
+<div class="general center blue2">
+  <h1 style="text-align: center;"><strong>Notices</strong></h1>
+</div>
 {% for notice in notices %}
 
 {% if notice.colour == 0 %}
