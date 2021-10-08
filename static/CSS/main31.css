@@ -22,7 +22,8 @@ body::-webkit-scrollbar{
 
 body, div, table, h1, h2 {
   margin: 0px;
-  overflow-x: hidden;
+  overflow: hidden !important;
+  overflow-y: hidden !important;
   margin: auto;
   font-family: 'Carme', sans-serif;
   text-align: center;
