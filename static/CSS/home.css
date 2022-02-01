@@ -1,6 +1,9 @@
 .container-fluid {
 	 width: 100%;
 }
+
+
+
  @media (max-width: 530px) {
 	 .container-fluid {
 		 left: 0;
