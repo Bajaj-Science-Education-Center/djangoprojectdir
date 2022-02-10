@@ -207,9 +207,16 @@
 
 }
 
-#mathsLab{
+#oAAmphitheatre{
 	
-	background-image: url(https://images.pexels.com/photos/6238050/pexels-photo-6238050.jpeg?cs=srgb&dl=pexels-monstera-6238050.jpg&fm=jpg);
+	background-image: url(../Images/amphitheathre.JPG);
+	background-size: cover;
+
+}
+
+#makersSpace{
+	
+	background-image: url(../Images/makerslab.JPG);
 	background-size: cover;
 
 }
