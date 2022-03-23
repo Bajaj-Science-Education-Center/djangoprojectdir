@@ -656,6 +656,29 @@ ul {
   padding: 7em 0;
   clear: both;
 }
+
+.horizontal-notice{
+  display: block;
+  width: 100vw;
+  height: 50px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+#horizontal-notice-content{
+  font-size: 22px;
+  display: block;
+  width: 2000px;
+  padding-top: 10px;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0%   { transform: translate(100vw, 0); }
+  100% { transform: translate(-100vw, 0); }
+}
+
+
 @media screen and (max-width: 768px) {
   #fh5co-footer {
     padding: 3em 0;
