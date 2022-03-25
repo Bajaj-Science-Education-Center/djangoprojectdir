@@ -46,7 +46,7 @@
 <div class="general blue2 hoverShadow hUnderline" style="padding: 50px 0px 125px 0px;">
 {% endif %}
   <h1><strong>{{notice.Notice.title}}</strong></h1>
-  <p><a href="https://docs.google.com/document/d/1A5wtS1mbb5R1Roiv3UNqCi-Up7vyZJcb-iwJLzwKqAA/edit?usp=drivesdk">{{notice.Notice.message}}</a></p>
+  <p><a href="https://docs.google.com/document/d/1Hvr2aEX3K_FhGdKamNg-x-6zF263xGWTkaOBanneXAo/edit?usp=sharing">{{notice.Notice.message}}</a></p>
 
 {% if user.is_superuser %}
   <h2 class="deleteNoticeButton" onclick="location.href='/DeleteNotice/{{notice.Notice.id}}'"><strong>Delete Notice</strong></h2>
