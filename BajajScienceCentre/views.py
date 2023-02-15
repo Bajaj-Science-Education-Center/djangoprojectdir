@@ -186,7 +186,7 @@ def simTemplate(request):
 #########SIMULATIONS##########
 def bouncingBalls(request):
     context = {'Title': 'Bouncing Balls Simulation'}
-    return(render(request, 'bouncingBalls.html', context))
+    return(render(request, 'Simulations/bouncingBalls.html', context))
 
 def pendulum(request):
     context = {'Title': 'Pendulum Simulation'}
