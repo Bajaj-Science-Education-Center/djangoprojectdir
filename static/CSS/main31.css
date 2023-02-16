@@ -670,7 +670,7 @@ ul {
   display: block;
   width: 2000px;
   padding-top: 10px;
-  animation: scroll 40s linear infinite;
+  animation: scroll 25s linear infinite;
 }
 
 @keyframes scroll {
